@@ -123,7 +123,7 @@ with open("output.txt", "w") as f:
     print("Hello, World!", file=f)  # Writes to the file instead of the console
 ```
 
-6. flush → If True, forces the output to be printed immediately without buffering. Useful in real-time logging.
+5. flush → If True, forces the output to be printed immediately without buffering. Useful in real-time logging.
 
 ```bash
 import time
@@ -133,6 +133,6 @@ for i in range(5):
 ```
 
 
-Parameters 2 to 4 are optional
+Parameters 2 to 5 are optional
 
 ## [Next Lesson>>](https://replit.com/@codewithharry/06-Day6-Variables-and-Data-Types)
