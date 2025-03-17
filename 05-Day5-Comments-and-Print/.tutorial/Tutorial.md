@@ -116,6 +116,22 @@ print(object(s), sep=separator, end=end, file=file, flush=flush)
 2. sep='separator': Specify how to separate the objects, if there is more than one. Default is ' '
 3. end='end': Specify what to print at the end. Default is '\n' (line feed)
 4. file: An object with a write method. Default is sys.stdout
+file → Specifies where to print the output. Default is sys.stdout (console). You can redirect output to a file using file=open("output.txt", "w").
+
+```bash
+with open("output.txt", "w") as f:
+    print("Hello, World!", file=f)  # Writes to the file instead of the console
+```
+
+6. flush → If True, forces the output to be printed immediately without buffering. Useful in real-time logging.
+
+```bash
+import time
+for i in range(5):
+    print(i, end=" ", flush=True)  # Ensures each number is printed immediately
+    time.sleep(1)  # Simulates delay
+```
+
 
 Parameters 2 to 4 are optional
 
